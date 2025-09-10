@@ -1,12 +1,18 @@
-import React from 'react'
-import Hero from '../components/hero' // Assuming relative path for Hero component
+import React from "react";
+import Hero from "../components/hero";
+import FeaturedSection from "../components/FeaturedSection";
+import Banner from "../components/Banner";
+import Testimonial from "../components/Testimonial"; // ← add this
 
 const Home = () => {
   return (
-    <> {/* This fragment correctly wraps the Hero component */}
+    <>
       <Hero />
+      <FeaturedSection />
+      <Banner />
+      <Testimonial />
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
